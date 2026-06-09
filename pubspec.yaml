@@ -1,0 +1,75 @@
+name: matchup
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+version: 1.0.1+1
+
+environment:
+  sdk: ^3.11.5
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  #  Get It
+  get_it: ^9.2.1
+
+  #  Equitable
+  equatable: ^2.0.8
+
+  #  Local storage
+  hive_flutter: ^1.1.0
+
+  #  Dio
+  dio: ^5.9.2
+
+  #  Dartz
+  dartz: ^0.10.1
+
+  #  Bloc
+  flutter_bloc: ^9.1.1
+
+  #  Go Router
+  go_router: ^14.8.1
+
+  #  Intl
+  intl: ^0.20.2
+
+  #  Icons
+  flutter_lucide: ^1.11.0
+
+
+  #  Morque
+  marquee: ^2.3.0
+  internet_connection_checker_plus: ^3.0.1
+  url_launcher: ^6.3.2
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.14.3
+
+
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/matchUP.png"
+
+  adaptive_icon_background: "#1C2538"
+  adaptive_icon_foreground: "assets/images/matchUP.png"
+
+  remove_alpha_ios: true
+
+flutter:
+
+  uses-material-design: true
+
+
+  assets:
+    - assets/images/
