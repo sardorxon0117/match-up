@@ -9,14 +9,17 @@ class DioClient {
         connectTimeout: const Duration(seconds: 10),
         receiveTimeout: const Duration(seconds: 10),
         headers: {
-          'Content-Type' : 'application/json',
-          'x-apisports-key': '41938eeeae3153a96d9aa55d06f6cc5b'
-        }
-      )
+          'Content-Type': 'application/json',
+          'x-apisports-key': AppConstants.xApisportsKey,
+        },
+      ),
     );
 
-    dio.interceptors.add(LogInterceptor(request: true, responseBody: true, error: true));
+    dio.interceptors.add(
+      LogInterceptor(request: true, responseBody: true, error: true),
+    );
 
     return dio;
   }
 }
+
